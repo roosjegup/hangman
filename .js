@@ -18,13 +18,13 @@ function nieuwSpel() {
     var streepjes = "",
         i;
 
-
     for (i = 0; i < teRadenWoordLijst.length; i++) {
         streepjes = streepjes + "_";
     }
-        document.getElementById("geradenwoord").innerHTML = streepjes;
 }
-}
+document.getElementById("geradenwoord").innerHTML = streepjes;
+
+nieuwSpel();
 
 
 
@@ -91,33 +91,32 @@ function letterKlik(gekozenLetter) {
     }
 }
 
-
-document.getElementById("a").onclick = letterKlik;
-document.getElementById("b").onclick = letterKlik;
-document.getElementById("c").onclick = letterKlik;
-document.getElementById("d").onclick = letterKlik;
-document.getElementById("e").onclick = letterKlik;
-document.getElementById("f").onclick = letterKlik;
-document.getElementById("g").onclick = letterKlik;
-document.getElementById("h").onclick = letterKlik;
-document.getElementById("i").onclick = letterKlik;
-document.getElementById("j").onclick = letterKlik;
-document.getElementById("k").onclick = letterKlik;
-document.getElementById("l").onclick = letterKlik;
-document.getElementById("m").onclick = letterKlik;
-document.getElementById("n").onclick = letterKlik;
-document.getElementById("o").onclick = letterKlik;
-document.getElementById("p").onclick = letterKlik;
-document.getElementById("q").onclick = letterKlik;
-document.getElementById("r").onclick = letterKlik;
-document.getElementById("s").onclick = letterKlik;
-document.getElementById("t").onclick = letterKlik;
-document.getElementById("u").onclick = letterKlik;
-document.getElementById("v").onclick = letterKlik;
-document.getElementById("w").onclick = letterKlik;
-document.getElementById("x").onclick = letterKlik;
-document.getElementById("y").onclick = letterKlik;
-document.getElementById("z").onclick = letterKlik;
+document.getElementById("a").addEventListener("click", function() { letterKlik("a"); });
+document.getElementById("b").addEventListener("click", function() { letterKlik("b"); });
+document.getElementById("c").addEventListener("click", function() { letterKlik("c"); });
+document.getElementById("d").addEventListener("click", function() { letterKlik("d"); });
+document.getElementById("e").addEventListener("click", function() { letterKlik("e"); });
+document.getElementById("f").addEventListener("click", function() { letterKlik("f"); });
+document.getElementById("g").addEventListener("click", function() { letterKlik("g"); });
+document.getElementById("h").addEventListener("click", function() { letterKlik("h"); });
+document.getElementById("i").addEventListener("click", function() { letterKlik("i"); });
+document.getElementById("j").addEventListener("click", function() { letterKlik("j"); });
+document.getElementById("k").addEventListener("click", function() { letterKlik("k"); });
+document.getElementById("l").addEventListener("click", function() { letterKlik("l"); });
+document.getElementById("m").addEventListener("click", function() { letterKlik("m"); });
+document.getElementById("n").addEventListener("click", function() { letterKlik("n"); });
+document.getElementById("o").addEventListener("click", function() { letterKlik("o"); });
+document.getElementById("p").addEventListener("click", function() { letterKlik("p"); });
+document.getElementById("q").addEventListener("click", function() { letterKlik("q"); });
+document.getElementById("r").addEventListener("click", function() { letterKlik("r"); });
+document.getElementById("s").addEventListener("click", function() { letterKlik("s"); });
+document.getElementById("t").addEventListener("click", function() { letterKlik("t"); });
+document.getElementById("u").addEventListener("click", function() { letterKlik("u"); });
+document.getElementById("v").addEventListener("click", function() { letterKlik("v"); });
+document.getElementById("w").addEventListener("click", function() { letterKlik("w"); });
+document.getElementById("x").addEventListener("click", function() { letterKlik("x"); });
+document.getElementById("y").addEventListener("click", function() { letterKlik("y"); });
+document.getElementById("z").addEventListener("click", function() { letterKlik("z"); });
 
 
 // letter kan gekozen worden
